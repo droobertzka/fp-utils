@@ -24,7 +24,7 @@ const curry = (fn, arity = fn.length, args = []) =>
 
 const curryUglyButt = (fn, arity = fn.length, args = []) =>
   args.length < arity
-    ? x => curry(fn, arity, args.concat([x]))
+    ? x => curryUglyButt(fn, arity, args.concat([x]))
     : fn.apply(null, args)
 
 // Simpler curry for use on functions with proper arity (not prototype methods)

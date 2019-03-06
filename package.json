@@ -1,0 +1,22 @@
+{
+  "name": "fp-utils",
+  "version": "0.1.0",
+  "description": "Naively implemented functional programming utilities",
+  "main": "fp-utils.js",
+  "scripts": {
+    "test": "node src/fp-utils.spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/droopert/fp-utils.git"
+  },
+  "keywords": [
+    "functional programming"
+  ],
+  "author": "droopert",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/droopert/fp-utils/issues"
+  },
+  "homepage": "https://github.com/droopert/fp-utils#readme"
+}

@@ -39,11 +39,11 @@ const currySimple = (fn, args = []) =>
     : fn.apply(null, args)
 
 /***** COMPOSE *****/
-const compose = (...fns) => (...args) => {
+const composeVerbose = (...fns) => (...args) => {
   const result = fns.pop()(...args)
   if (!fns.length) return result
   if (fns.length === 1) return fns[0](result)
-  return compose(...fns)(result)
+  return composeVerbose(...fns)(result)
 }
 
 const baseComposeLeft = (f, g) => (...args) => g(f(...args))
